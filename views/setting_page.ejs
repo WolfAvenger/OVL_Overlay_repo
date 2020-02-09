@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/stylesheets/params.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <title>Document</title>
+    <script src="javascripts/sender.js"></script>
+</head>
+<body>
+    <div class="settings">
+        <div class="team1">
+            <div class="score">
+                <p>Team left score: </p>
+                <input type="number" class="score" placeholder="Team left score" min="0" max="4">
+            </div>
+            <div class="name">
+                <p>Team left name: </p>
+                <input type="text" class="teamname" placeholder="Team left name">
+            </div>
+            <div class="teamcolor">
+                <p>Team left color: </p>
+                <input type="color" class="colorpicker">
+                <input type="range" class="alpha" oninput="updateColorAlpha(0, this.value)" onchange="updateColorAlpha(0, this.value);" min="0" max="1" step="0.01" value="1">
+            </div>
+            <div class="imgloader">
+                <p>Team left logo: </p>
+                <input type="file" class="logoloader" name="pic" accept="image/*">
+            </div>
+        </div>
+        <div class="team2">
+            <div class="score">
+                <p>Team right score: </p>
+                <input type="number" class="score" placeholder="Team left score" min="0" max="4">
+            </div>
+            <div class="name">
+                <p>Team right name: </p>
+                <input type="text" class="teamname" placeholder="Team left name">
+            </div>
+            <div class="teamcolor">
+                <p>Team right color: </p>
+                <input type="color" class="colorpicker">
+                <input type="range" class="alpha" oninput="updateColorAlpha(1, this.value)" onchange="updateColorAlpha(1, this.value);" min="0" max="1" step="0.01" value="1">
+            </div>
+            <div class="imgloader">
+                <p>Team right logo: </p>
+                <input type="file" class="logoloader" name="pic" accept="image/*">
+            </div>
+        </div>
+        <div class="caster">
+            <p>Caster: </p><input type="text" placeholder="Caster's name" id="caster">
+        </div>
+        <button onclick="makeFetch()">Send data!</button>
+    </div>
+    <div class="maps">
+        <div class="map">
+            <p>Map 1:</p>
+            <input type="text"><input class="mapelem" type="file">
+            <select name="" id="" >
+                <option value="COTH" selected>COTH</option>
+                <option value="2CP">2CP</option>
+                <option value="Hybrid">Hybrid</option>
+                <option value="Escort">Escort</option>
+            </select>
+            <p>Score:</p>
+            <input type="number" class="mapscore">
+            <p>  :  </p>
+            <input type="number" class="mapscore">
+        </div>
+        <div class="map">
+            <p>Map 2:</p>
+            <input type="text"><input class="mapelem" type="file">
+            <select name="" id="">
+                <option value="COTH">COTH</option>
+                <option value="2CP" selected>2CP</option>
+                <option value="Hybrid">Hybrid</option>
+                <option value="Escort">Escort</option>
+            </select>
+            <p>Score:</p>
+            <input type="number" class="mapscore">
+            <p>  :  </p>
+            <input type="number" class="mapscore">
+        </div>
+        <div class="map">
+            <p>Map 3:</p>
+            <input type="text"><input class="mapelem" type="file">
+            <select name="" id="">
+                <option value="COTH">COTH</option>
+                <option value="2CP">2CP</option>
+                <option value="Hybrid" selected>Hybrid</option>
+                <option value="Escort">Escort</option>
+            </select>
+            <p>Score:</p>
+            <input type="number" class="mapscore">
+            <p>  :  </p>
+            <input type="number" class="mapscore">
+        </div>
+        <div class="map">
+            <p>Map 4:</p>
+            <input type="text"><input class="mapelem" type="file">
+            <select name="" id="">
+                <option value="COTH">COTH</option>
+                <option value="2CP">2CP</option>
+                <option value="Hybrid">Hybrid</option>
+                <option value="Escort" selected>Escort</option>
+            </select>
+            <p>Score:</p>
+            <input type="number" class="mapscore">
+            <p>  :  </p>
+            <input type="number" class="mapscore">
+        </div>
+        <div class="map">
+            <p>Map 5:</p>
+            <input type="text"><input class="mapelem" type="file">
+            <select name="" id="">
+                <option value="COTH" selected>COTH</option>
+                <option value="2CP">2CP</option>
+                <option value="Hybrid">Hybrid</option>
+                <option value="Escort">Escort</option>
+            </select>
+            <p>Score:</p>
+            <input type="number" class="mapscore">
+            <p>  :  </p>
+            <input type="number" class="mapscore">
+        </div>
+    </div>
+</body>
+</html>

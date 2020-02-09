@@ -1,0 +1,98 @@
+@font-face {
+    font-family: "BigNoodleTitlingCyr";
+    src: url("//db.onlinewebfonts.com/t/684c94f6cc6f9deda52aa04282ab7dae.eot");
+    src: url("//db.onlinewebfonts.com/t/684c94f6cc6f9deda52aa04282ab7dae.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/684c94f6cc6f9deda52aa04282ab7dae.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/684c94f6cc6f9deda52aa04282ab7dae.woff") format("woff"), url("//db.onlinewebfonts.com/t/684c94f6cc6f9deda52aa04282ab7dae.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/684c94f6cc6f9deda52aa04282ab7dae.svg#BigNoodleTitlingCyr") format("svg");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "BigNoodleTitlingCyr", serif;
+    background: url('../images/fon.gif') no-repeat center center fixed;
+    color: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 99%;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+
+#top, #middle, #bottom {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid red;
+}
+
+#top {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 26pt;
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+#middle {
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-height: 45%;
+    font-size: 26pt;
+}
+
+#bottom{
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 40%;
+    margin-top: 3%;
+}
+
+.caster-name{
+    font-size: 42pt;
+}
+
+.team-left, .team-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+    padding: 0;
+    border: 1px solid red;
+    width: 33%;
+}
+
+.teamname-left, .teamname-right {
+    margin-top: 10px;
+    font-size: 36pt;
+}
+
+.score-left, .score-right{
+    font-size: 48pt;
+}
+
+.logo-left, .logo-right {
+    max-width: 40%;
+    max-height: 40%;
+    filter: chroma(color = #FFFFFF);
+}
+
+.map {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.map-img {
+    width: 75%;
+}

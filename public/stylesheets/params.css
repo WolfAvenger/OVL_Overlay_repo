@@ -1,0 +1,101 @@
+@font-face {font-family: "BigNoodleTitlingCyr";
+    src: url("//db.onlinewebfonts.com/t/684c94f6cc6f9deda52aa04282ab7dae.eot");
+    src: url("//db.onlinewebfonts.com/t/684c94f6cc6f9deda52aa04282ab7dae.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/684c94f6cc6f9deda52aa04282ab7dae.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/684c94f6cc6f9deda52aa04282ab7dae.woff") format("woff"), url("//db.onlinewebfonts.com/t/684c94f6cc6f9deda52aa04282ab7dae.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/684c94f6cc6f9deda52aa04282ab7dae.svg#BigNoodleTitlingCyr") format("svg"); }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-width: 1120px;
+    font-family: BigNoodleTitlingCyr;
+}
+
+.settings, .maps {
+    border: 1px solid black;
+    width: 30%;
+}
+
+.settings{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.maps {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team1, .team2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+div.score, div.name, div.teamcolor, div.imgloader, .caster {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid black;
+    width: 100%;
+}
+
+.team1>div>p, .team2>div>p, .caster>p{
+    width: 30%;
+}
+
+
+input.score {
+    width: 40px;
+    text-align: center;
+}
+input.teamname, .caster>input {
+    width: 40%;
+    text-align: center;
+}
+.caster>input {
+    width: 50%;
+}
+
+.colorpicker{
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 20px;
+}
+
+.map {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+option {
+    width: 70px;
+}
+
+button{
+    font-size: 24pt;
+}
+
+.mapscore {
+    width: 40px;
+}
+
+.map>p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
