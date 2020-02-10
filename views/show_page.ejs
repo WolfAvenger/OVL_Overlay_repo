@@ -8,13 +8,18 @@
     <title>Document</title>
     <script src="javascripts/getter.js"></script>
     <link rel="stylesheet" href="stylesheets/shower.css">
+    <script src="https://kit.fontawesome.com/5991e93572.js" crossorigin="anonymous"></script>
 </head>
 <body onload="makeFetch()">
+<video autoplay muted loop class="back">
+    <source src="images/Morkovny_fon.mov">
+</video>
 
     <div id="top">
         <div class="caster">
-            <!--   Font awesome   -->
-            <p class="caster-name"> THERE WILL BE NICK OF CASTER!</p>
+            <!--   Font awesome   --><i class="fas fa-headset"></i>
+            <p class="caster-name" onclick="makeFetch()">
+                THERE WILL BE NICK OF CASTER!</p>
         </div>
     </div>
     <div id="middle">
@@ -31,27 +36,59 @@
         </div>
     </div>
     <div id="bottom">
-        <div class="map"><img src="" alt="" class="map-img">
+        <div class="map">
+            <div class="map-img">
+                <p class="map-type">Control</p>
+                <div>
+                    <img src="images/icons/control.png" alt="" class="type-icon">
+                    <p class="map-name"></p>
+                </div>
+                <p class="map-score" id="test"></p>
+            </div>
 
-<!--            <p class="map-name"></p>-->
-<!--            <p class="map-score"></p>-->
         </div>
-        <div class="map"><img src="" alt="" class="map-img">
-<!--            <p class="map-name"></p>-->
-<!--            <p class="map-score"></p>-->
+        <div class="map">
+            <div class="map-img">
+                <p class="map-type">Control</p>
+                <p class="map-score" id="test"></p>
+                <div>
+                    <img src="images/icons/assault.png" alt="" class="type-icon">
+                    <p class="map-name"></p>
+                </div>
+            </div>
         </div>
-        <div class="map"><img src="" alt="" class="map-img">
-<!--            <p class="map-name"></p>-->
-<!--            <p class="map-score"></p>-->
+        <div class="map">
+            <div class="map-img" >
+                <p class="map-type">Control</p>
+                <p class="map-score" id="test2"></p>
+                <div>
+                    <img src="images/icons/hybrid.png" alt="" class="type-icon">
+                    <p class="map-name"></p>
+                </div>
+            </div>
         </div>
-        <div class="map"><img src="" alt="" class="map-img">
-<!--            <p class="map-name"></p>-->
-<!--            <p class="map-score"></p>-->
+        <div class="map">
+            <div class="map-img" >
+                <p class="map-type">Control</p>
+                <div>
+                    <img src="images/icons/escort.png" alt="" class="type-icon">
+                    <p class="map-name"></p>
+                </div>
+                <p class="map-score" id="test2"></p>
+
+            </div>
         </div>
-        <div class="map"><img src="" alt="" class="map-img">
-<!--            <p class="map-name"></p>-->
-<!--            <p class="map-score"></p>-->
+        <div class="map">
+            <div class="map-img">
+                <p class="map-type">Control</p>
+                <p class="map-score"></p>
+                <div>
+                    <img src="images/icons/control.png" alt="" class="type-icon">
+                    <p class="map-name"></p>
+                </div>
+            </div>
         </div>
     </div>
+        
 </body>
 </html>

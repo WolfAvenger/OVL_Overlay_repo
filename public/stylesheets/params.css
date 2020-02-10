@@ -2,6 +2,11 @@
     src: url("//db.onlinewebfonts.com/t/684c94f6cc6f9deda52aa04282ab7dae.eot");
     src: url("//db.onlinewebfonts.com/t/684c94f6cc6f9deda52aa04282ab7dae.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/684c94f6cc6f9deda52aa04282ab7dae.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/684c94f6cc6f9deda52aa04282ab7dae.woff") format("woff"), url("//db.onlinewebfonts.com/t/684c94f6cc6f9deda52aa04282ab7dae.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/684c94f6cc6f9deda52aa04282ab7dae.svg#BigNoodleTitlingCyr") format("svg"); }
 
+@font-face {
+    font-family: "Industry Medium";
+    src: url("fonts/Industry-Medium.ttf");
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -11,7 +16,7 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     min-width: 1120px;
-    font-family: BigNoodleTitlingCyr;
+    font-family: "Industry Medium", sans-serif;
 }
 
 .settings, .maps {
@@ -39,6 +44,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    text-align: center;
+    text-align-all: center;
     width: 100%;
 }
 
@@ -67,6 +74,10 @@ input.teamname, .caster>input {
 .caster>input {
     width: 50%;
 }
+.caster{
+    text-align-all: center;
+    text-align: center;
+}
 
 .colorpicker{
     background: none;
@@ -83,6 +94,13 @@ input.teamname, .caster>input {
     align-items: center;
 }
 
+.map-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 option {
     width: 70px;
 }
@@ -95,7 +113,6 @@ button{
     width: 40px;
 }
 
-.map>p{
-    margin-left: 10px;
-    margin-right: 10px;
+.map-name{
+
 }

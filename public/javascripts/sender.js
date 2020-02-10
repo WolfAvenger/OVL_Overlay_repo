@@ -21,35 +21,45 @@ async function createData() {
                     team1: getMapScore(0),
                     team2: getMapScore(1)
                 },
-                imgpath: getImage(0, false, 'mapelem')
+                imgpath: getImage(0, false, 'mapelem'),
+                type: 'Control'.toUpperCase(),
+                name: getMapName(0)
             },
             _2cp: {
                 score: {
                     team1: getMapScore(2),
                     team2: getMapScore(3)
                 },
-                imgpath: getImage(1, false, 'mapelem')
+                imgpath: getImage(1, false, 'mapelem'),
+                type: "Assault".toUpperCase(),
+                name: getMapName(1)
             },
             hybrid: {
                 score: {
                     team1: getMapScore(4),
                     team2: getMapScore(5)
                 },
-                imgpath: getImage(2, false, 'mapelem')
+                imgpath: getImage(2, false, 'mapelem'),
+                type: "Hybrid".toUpperCase(),
+                name: getMapName(2)
             },
             escort: {
                 score: {
                     team1: getMapScore(6),
                     team2: getMapScore(7)
                 },
-                imgpath: getImage(3, false, 'mapelem')
+                imgpath: getImage(3, false, 'mapelem'),
+                type: "Escort".toUpperCase(),
+                name: getMapName(3)
             },
             tiebreaker_coth: {
                 score: {
                     team1: getMapScore(8),
                     team2: getMapScore(9)
                 },
-                imgpath: getImage(4, false, 'mapelem')
+                imgpath: getImage(4, false, 'mapelem'),
+                type: "Control".toUpperCase(),
+                name: getMapName(4)
             }
         },
         other: {
@@ -117,6 +127,14 @@ function getMapScore(index){
     let score = (document).getElementsByClassName('mapscore')[index].value;
     if (score === '') return null;
     return score;
+}
+
+function getMapName(index){
+    let img = (document).getElementsByClassName('mapelem')[index].value;
+    img = img.slice(12);
+    img = img.slice(0, img.indexOf('.'));
+    img = img.toUpperCase().split('_').join(' ');
+    return img;
 }
 
 function getCasterName(){

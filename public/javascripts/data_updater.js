@@ -1,41 +1,65 @@
 var overlay_data = {
     team1: {
-        name: null, //name of team
-        score: null, //its score
-        color: null, //hex-code team's color
-        logo: null //image() logo
+        name: 'null', //name of team
+        score: 'null', //its score
+        color: 'null', //hex-code team's color
+        logo: 'null' //logo filepath in
     },
     team2: {
-        name: null,
-        score: null,
-        color: null,
-        logo: null
+        name: 'null',
+        score: 'null',
+        color: 'null',
+        logo: 'null'
     },
-    maps : {
-        koth: {
+    maps: {
+        coth: {
             score: {
-                team1: null,
-                team2: null
-            }
+                team1: 'null',
+                team2: 'null'
+            },
+            imgpath: 'null',
+            type: 'Control',
+            name: 'null'
         },
         _2cp: {
             score: {
-                team1: null,
-                team2: null
-            }
+                team1: 'null',
+                team2: 'null'
+            },
+            imgpath: 'null',
+            type: "Assault",
+            name: 'null'
         },
         hybrid: {
             score: {
-                team1: null,
-                team2: null
-            }
+                team1: 'null',
+                team2: 'null'
+            },
+            imgpath: 'null',
+            type: "Hybrid",
+            name: 'null'
         },
         escort: {
             score: {
-                team1: null,
-                team2: null
-            }
+                team1: 'null',
+                team2: 'null'
+            },
+            imgpath: 'null',
+            type: "Escort",
+            name: 'null'
+        },
+        tiebreaker_coth: {
+            score: {
+                team1: 'null',
+                team2: 'null'
+            },
+            imgpath: 'null',
+            type: "Control",
+            name: 'null'
         }
+    },
+    other: {
+        casterName: 'null'
     }
 };
 
