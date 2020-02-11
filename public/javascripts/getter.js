@@ -59,7 +59,8 @@ window.newData = {
         }
     },
     other: {
-        casterName: 'null'
+        casterName: 'null',
+        stageName: 'null'
     }
 };
 
@@ -82,9 +83,8 @@ function makeFetch() {
 //region depack functions
 
 function setCaster(data) {
-    console.log('Caster setting');
     (document).getElementsByClassName('caster-name')[0].innerHTML = data.other.casterName;
-    console.log('Caster is set');
+    (document).getElementsByClassName('stage-name')[0].innerHTML = data.other.stageName;
 }
 
 function setTeams(data){
@@ -112,7 +112,7 @@ function setMaps(dat){
         (document).getElementsByClassName('map-type')[i].innerText = mapdata[i].type;
         (document).getElementsByClassName('map-name')[i].style.fontSizeAdjust = adjust;
         if (mapdata[i].name.length > 16){
-            if (adjust != '0.41'){
+            if (adjust !== '0.41'){
                 adjust = '0.41';
                 (document).getElementsByClassName('map-name')[i].style.fontSizeAdjust = adjust;
                 i = -1;

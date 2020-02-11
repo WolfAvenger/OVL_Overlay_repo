@@ -3,6 +3,7 @@
     src: url("//db.onlinewebfonts.com/t/684c94f6cc6f9deda52aa04282ab7dae.eot");
     src: url("//db.onlinewebfonts.com/t/684c94f6cc6f9deda52aa04282ab7dae.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/684c94f6cc6f9deda52aa04282ab7dae.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/684c94f6cc6f9deda52aa04282ab7dae.woff") format("woff"), url("//db.onlinewebfonts.com/t/684c94f6cc6f9deda52aa04282ab7dae.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/684c94f6cc6f9deda52aa04282ab7dae.svg#BigNoodleTitlingCyr") format("svg");
 }
+
 @font-face {
     font-family: "Industry Medium";
     src: url("fonts/Industry-Medium.ttf");
@@ -25,9 +26,14 @@ body {
     width: 99%;
     height: 100%;
 }
-p{
+
+p {
     margin: 0;
     padding: 0;
+}
+
+i {
+    margin-right: 20px;
 }
 
 .back {
@@ -41,12 +47,12 @@ p{
 
 #top, #middle, #bottom {
     display: flex;
-    flex-direction: row;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     height: 100%;
 }
 
 #top {
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -59,37 +65,53 @@ p{
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    /*max-height: 45%;*/
+    height: 100%;
     font-size: 26pt;
+    margin-top: 30px;
 }
 
-#bottom{
+#bottom {
     justify-content: space-between;
     align-items: center;
     width: 80%;
     /*height: 40%;*/
     margin-top: 1%;
 }
-.caster{
+
+.caster {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-.caster-name{
-    font-size: 42pt;
+    width: 40%;
 }
 
-.team-left, .team-right{
+.caster-name, .stage-name {
+    font-size: 30pt;
+}
+
+.stage-name {
+    color: #e6b157;
+}
+
+.team-left, .team-right {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin:0;
+    justify-content: space-between;
+    margin: 0;
     padding: 0;
-    border: 1px solid red;
-    width: 33%;
+    /*border: 1px solid red;*/
+    width: 25%;
     height: 100%;
+}
+
+.webcam {
+    width: 50%;
+    border: 1px solid black;
+    min-height: 100%;
+    background: url(../images/transarent_background.png) repeat center center fixed;
+    background-size: cover;
 }
 
 .teamname-left, .teamname-right {
@@ -97,13 +119,14 @@ p{
     font-size: 36pt;
 }
 
-.score-left, .score-right{
+.score-left, .score-right {
     font-size: 48pt;
+    margin-bottom: -10px;
 }
 
-.team-left>img.logo-left, .team-right>img.logo-right {
-    border: 1px solid orange;
-    max-height: 35vh;
+.team-left > img.logo-left, .team-right > img.logo-right {
+    /*border: 1px solid orange;*/
+    max-height: 30vh;
     width: auto;
 }
 
@@ -135,27 +158,27 @@ p{
     background-position: center;
 }
 
-.map-score{
+.map-score {
     background-color: rgba(200, 200, 200, 0.55);
     width: 100%;
     font-size: 18pt;
 }
 
-.map-img{
+.map-img {
     position: relative;
 }
 
-.map-type{
+.map-type {
     position: absolute;
     top: 0;
     font-size: 14pt;
-    color: #c98612;
-    background-color: rgba(0,0,0,0.55);
+    color: #e6b157;
+    background-color: rgba(0, 0, 0, 0.55);
     font-family: "Industry Medium";
     width: 100%;
 }
 
-.map-name{
+.map-name {
     top: 18pt;
     color: white;
     left: 0;
@@ -168,10 +191,17 @@ p{
     background-color: transparent;
     font-family: "BigNoodleTitlingCyr";
     position: absolute;
-    top: calc((22vh)/2);
+    top: calc((22vh) / 2);
 }
 
-.map-img > div {
+.top-map-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.top-map-cont > div {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -180,14 +210,14 @@ p{
     position: absolute;
     top: 18pt;
     width: 100%;
-    background-color: rgba(0,0,0,0.55);
+    background-color: rgba(0, 0, 0, 0.55);
     font-size: 13pt;
     color: white;
     font-family: "Industry Medium";
 }
 
-.type-icon{
-   /* position: absolute;*/
+.type-icon {
+    /* position: absolute;*/
     margin-right: 5px;
     width: 16pt;
     height: auto;

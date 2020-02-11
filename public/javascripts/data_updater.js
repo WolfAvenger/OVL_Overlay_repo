@@ -59,7 +59,8 @@ var overlay_data = {
         }
     },
     other: {
-        casterName: 'null'
+        casterName: 'null',
+        stageName: 'null'
     }
 };
 

@@ -63,7 +63,8 @@ async function createData() {
             }
         },
         other: {
-            casterName: getCasterName()
+            casterName: getCasterName(),
+            stageName: getStageName()
         }
     };
     console.log(data);
@@ -139,5 +140,9 @@ function getMapName(index){
 
 function getCasterName(){
     return (document).getElementById('caster').value;
+}
+
+function getStageName(){
+    return (document).getElementById('stage-text').value;
 }
 //endregion

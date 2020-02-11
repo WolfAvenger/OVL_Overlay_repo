@@ -49,7 +49,7 @@ body {
     width: 100%;
 }
 
-div.score, div.name, div.teamcolor, div.imgloader, .caster {
+div.score, div.name, div.teamcolor, div.imgloader, .caster, .stage-name {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -58,7 +58,7 @@ div.score, div.name, div.teamcolor, div.imgloader, .caster {
     width: 100%;
 }
 
-.team1>div>p, .team2>div>p, .caster>p{
+.team1>div>p, .team2>div>p, .caster>p, .stage-name>p{
     width: 30%;
 }
 
@@ -67,14 +67,14 @@ input.score {
     width: 40px;
     text-align: center;
 }
-input.teamname, .caster>input {
+input.teamname, .caster>input, .stage-name>input {
     width: 40%;
     text-align: center;
 }
-.caster>input {
+.caster>input, .stage-name>input {
     width: 50%;
 }
-.caster{
+.caster, .stage-name{
     text-align-all: center;
     text-align: center;
 }
