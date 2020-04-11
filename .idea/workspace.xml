@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6b1c22d4-ba10-4fa1-bed9-1458e9480dae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/javascripts/data_updater.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/data_updater.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/javascripts/getter.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/getter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/javascripts/sender.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/sender.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/stylesheets/params.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/params.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/shower.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/shower.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/setting_page.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/setting_page.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/show_page.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/show_page.ejs" afterDir="false" />
     </list>
@@ -80,6 +79,11 @@
       <workItem from="1581070645924" duration="7348000" />
       <workItem from="1581117696420" duration="44208000" />
       <workItem from="1581300590879" duration="19438000" />
+      <workItem from="1581392674871" duration="813000" />
+      <workItem from="1581680370459" duration="142000" />
+      <workItem from="1581758079555" duration="4766000" />
+      <workItem from="1583708722282" duration="3000" />
+      <workItem from="1586576621181" duration="4163000" />
     </task>
     <task id="LOCAL-00001" summary="Updating outlook">
       <created>1581366499387</created>
@@ -99,6 +103,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Updating outlook" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="532" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581761972388">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="532" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1581761972388" />
     <state x="516" y="267" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1581372039048">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

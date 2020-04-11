@@ -26,4 +26,8 @@ router.post('/data', function(req, res, next){
   res.json({});
 });
 
+router.get('/preview', function (req, res, next) {
+  res.render('preview', overlay_data);
+})
+
 module.exports = router;

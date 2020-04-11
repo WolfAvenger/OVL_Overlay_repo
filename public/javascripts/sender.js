@@ -64,7 +64,8 @@ async function createData() {
         },
         other: {
             casterName: getCasterName(),
-            stageName: getStageName()
+            stageName: getStageName(),
+            bg: getBGFile()
         }
     };
     console.log(data);
@@ -144,5 +145,9 @@ function getCasterName(){
 
 function getStageName(){
     return (document).getElementById('stage-text').value;
+}
+
+function getBGFile(){
+    return (document).getElementsByClassName('bg-url')[0].value;
 }
 //endregion

@@ -60,9 +60,11 @@ window.newData = {
     },
     other: {
         casterName: 'null',
-        stageName: 'null'
+        stageName: 'null',
+        bg: 'null'
     }
 };
+window.video = "";
 
 function makeFetch() {
     let response = fetch('/data')
@@ -72,6 +74,7 @@ function makeFetch() {
         .then(res => {
             if (window.newData !== res){
                 window.newData = res;
+
                 setCaster(res);
                 setTeams(res);
                 setMaps(res);
@@ -85,10 +88,24 @@ function makeFetch() {
 function setCaster(data) {
     (document).getElementsByClassName('caster-name')[0].innerHTML = data.other.casterName;
     (document).getElementsByClassName('stage-name')[0].innerHTML = data.other.stageName;
+    if (data.other.bg !== "") {
+        if (data.other.bg !== window.video) {
+            let player = (document).getElementsByClassName('back')[0];
+            player.setAttribute('src', data.other.bg);
+            player.load();
+            player.play();
+            console.log(data.other.bg);
+            window.video = data.other.bg;
+        }
+    }
+    else {
+        (document).getElementById('bg').src = "images/bg.mov";
+        window.video = data.other.bg;
+    }
+
 }
 
 function setTeams(data){
-    console.log('Teams setting');
     (document).getElementsByClassName('logo-left')[0].setAttribute('src', data.team1.logo);
     (document).getElementsByClassName('teamname-left')[0].innerText = data.team1.name;
     (document).getElementsByClassName('teamname-left')[0].style.color = data.team1.color.slice(0,data.team1.color.lastIndexOf(','))+')';
@@ -124,37 +141,21 @@ function setMaps(dat){
         (document).getElementsByClassName('map-score')[i].innerText = "";
         (document).getElementsByClassName('map')[i].style.backgroundImage = "url("+mapdata[i].imgpath+")";
         if (mapdata[i].score.team1 > mapdata[i].score.team2){
-            //animateDOM('map-img',i,true);
-            //animateDOM('map-score', i, false);
             (document).getElementsByClassName('map-score')[i].style.opacity = '100%';
             (document).getElementsByClassName('map-img')[i].style.backgroundColor = data.team1.color;
+            //(document).getElementsByClassName('map-score')[i].innerText = mapdata[i].score.team1+' : '+mapdata[i].score.team2;
             //(document).getElementsByClassName('map-img')[i].style.backgroundImage = 'url('+data.team1.logo+')';
-            (document).getElementsByClassName('map-score')[i].innerText = mapdata[i].score.team1+' : '+mapdata[i].score.team2;
         } else if (mapdata[i].score.team1 < mapdata[i].score.team2) {
             (document).getElementsByClassName('map-img')[i].style.backgroundColor = data.team2.color;
-            (document).getElementsByClassName('map-score')[i].innerText = mapdata[i].score.team1+' : '+mapdata[i].score.team2;
+            //(document).getElementsByClassName('map-score')[i].innerText = mapdata[i].score.team1+' : '+mapdata[i].score.team2;
         } else {
             (document).getElementsByClassName('map-img')[i].style.backgroundColor = 'transparent';
+        }
+        if (mapdata[i].score.team1 !== null || mapdata[i].score.team2 !== null){
+            (document).getElementsByClassName('map-score')[i].innerText = mapdata[i].score.team1+' : '+mapdata[i].score.team2;
         }
     }
 }
 
-function animateDOM(className, index, colorize){
-    let data = window.newData;
-    if (colorize){
-        (document).getElementsByClassName(className)[index].animate({
-            backgroundColor: ['transparent', data.team1.color]
-        }, {
-            duration: 800,
-            easing: 'ease-in-out'
-        });
-    } else {
-        (document).getElementsByClassName(className)[index].animate({
-            opacity: ['0%', '100%']
-        }, {
-            duration: 2000,
-            easing: 'ease-in-out'
-        });
-    }
-}
 //endregion
+
