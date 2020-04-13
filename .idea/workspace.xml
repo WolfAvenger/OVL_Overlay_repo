@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6b1c22d4-ba10-4fa1-bed9-1458e9480dae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/javascripts/getter.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/getter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/javascripts/sender.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/sender.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/params.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/params.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/setting_page.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/setting_page.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/show_page.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/show_page.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +79,7 @@
       <workItem from="1581758079555" duration="4766000" />
       <workItem from="1583708722282" duration="3000" />
       <workItem from="1586576621181" duration="4163000" />
+      <workItem from="1586817637404" duration="67000" />
     </task>
     <task id="LOCAL-00001" summary="Updating outlook">
       <created>1581366499387</created>
